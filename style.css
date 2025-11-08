@@ -1,4 +1,8 @@
 /* --- General Styles & Variables --- */
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden; /* <--- ضيف السطر ده */
+}
 :root {
     --primary-color: #C85A2B;
     --secondary-color: #1E5637;
@@ -376,4 +380,5 @@ body.dark-mode .hero-content h1, body.dark-mode .hero-content p { color: #FDFDFD
 body.dark-mode .header-socials img, body.dark-mode .header-socials-desktop img { filter: invert(100%) brightness(1.5); }
 @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
 @keyframes moveGradient { 0% { background-position: 0% 50%; } 100% { background-position: 100% 50%; } }
+
 @keyframes pulseGlow { 0% { box-shadow: 0 5px 20px rgba(0,0,0,0.1), 0 0 0 0 rgba(200, 90, 43, 0.7); } 70% { box-shadow: 0 5px 20px rgba(0,0,0,0.1), 0 0 0 10px rgba(200, 90, 43, 0); } 100% { box-shadow: 0 5px 20px rgba(0,0,0,0.1), 0 0 0 0 rgba(200, 90, 43, 0); } }
